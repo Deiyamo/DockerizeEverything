@@ -10,9 +10,9 @@
 
 #### Commit
 * Verbe d'action + petite description du commit
->> Exemple : Add delete request
+> Exemple : Add delete request
 
 #### Branch
 * Feature + Nom de la feature
->> Exemple : feature-api
+> Exemple : feature-api
 
