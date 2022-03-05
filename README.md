@@ -1,6 +1,6 @@
 # Dockerize Everything
 
-**Sujet choisi : API**
+**Sujet choisi : API REST**
 
 L’objectif de ce projet est d’industrialiser l’application de votre choix. Industrialiser une application signifie que vous devez installer, paramétrer et optimiser des outils afin qu’une équipe de développement de toute taille puisse installer, développer et déployer l’application le plus facilement et le plus rapidement possible.
 
