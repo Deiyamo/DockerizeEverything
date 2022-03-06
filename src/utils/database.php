@@ -2,11 +2,11 @@
 
 function getDatabaseConnection(): PDO
 {
-    $host = 'localhost';
+    $host = 'database';
     $dbname = 'MesBouquins';
     $port = '3306';
     $user = 'root';
-    $pwd = 'root';
+    $pwd = '123';
     $driver = 'mysql';
 
     return new PDO("$driver:host=$host;dbname=$dbname;charset=utf8;port=$port", $user, $pwd);
