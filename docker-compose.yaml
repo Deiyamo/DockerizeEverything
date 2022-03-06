@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    container_name: php_web
+    volumes:
+      - ./src/:/var/www/html/
+    ports:
+      - "8100:80"
+    stdin_open: true
+    tty: true
+  database:
+    image : mysql:8.0
+    container_name: mysql_MesBouquins
+    volumes:
+      - ./MesBouquins.sql:/docker-entrypoint-initdb.d/init.sql
+    depends_on:
+      - web
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: MesBouquins
+      MYSQL_USER: devuser
+      MYSQL_PASSWORD: 123
+    ports:
+      - "9906:3306"
+  
+    
