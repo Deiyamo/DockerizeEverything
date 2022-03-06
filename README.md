@@ -20,3 +20,24 @@ L’objectif de ce projet est d’industrialiser l’application de votre choix.
 #### Branch
 * Feature + Nom de la feature
 > Exemple : feature-api
+
+
+## Contribuer
+
+La partie Docker comporte deux conteneurs, le premier est créé à partir d'un Dockerfile et le second à partir d'une image. 
+On a créé un volume pour la base de données permettant de lancer le script sql de création de base au démarrage du conteneur.
+
+### Images utilisées
+* php:8.1-apache
+* mysql:8.0
+
+### Ports utilisés
+Redirection du port 80 sur le port 8100 pour php ainsi que redirection du port 3306 sur la 9906 pour mysql.
+
+> On a aussi décidé de créé un Dockerfile pour mettre en place notre API à l'aide d'une commande permettant de copier notre dossier src sur le conteneur et de lemettre en tant que répertoire source. C'est aussi à partir du Dockerfile qu'on peut installer des extensions telles que pdo et pdo_mysql.
+
+
+## Déploiement
+
+Pour lancer le docker, utilisez la commande `docker-compose up -d`.
+Pour lancer le docker, utilisez la commande :
