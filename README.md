@@ -40,4 +40,3 @@ Redirection du port 80 sur le port 8100 pour php ainsi que redirection du port 3
 ## Déploiement
 
 Pour lancer le docker, utilisez la commande `docker-compose up -d`.
-Pour lancer le docker, utilisez la commande :
